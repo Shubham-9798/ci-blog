@@ -1,38 +1,83 @@
 body {
-    background-color: rgba(169, 214, 255, 0.932);
+    background-color: rgb(216, 239, 252);
 }
-.post-date{
-	background:#f4f4f4;
+
+.navbar-header .navbar-brand {
+   font-size: 2rem;
+   color: rgb(198, 203, 248);
+}
+
+.navbar-inverse {
+    background-color: #1a237e;
+    /* border-color: solid 9px #6b75dd; */
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fffefe;
+    font-size: 1.5rem;
+}
+
+.title {
+    border-bottom: solid 2px #353579;
+    padding: 5px 10px;
+    margin-bottom: 2rem; 
+    color: #2433ce;
+}
+
+.post {
+    -webkit-box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
+    background-color: white;
+    border-radius: 5px;
+}
+.post-body {
+    padding: 10px;
+    /* background-color: white; */
+}
+.post-date {
+	background:#1e0229;
 	padding:4px;
 	margin:3px 0;
-	display:block;
+    display:block;
+    font-size: 1.2rem;
+    color: white;
 }
 
+.post-title {
+    padding: 0 5px;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    margin-bottom: .5em; 
+    margin-top: .5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-align: center; */
+}
 
-
-.post-thumb{
+.post-thumb {
 	width:100%;
 }
 
-.pagination-links{
+.pagination-links {
 	margin:30px 0;
 }
 
-.pagination-links strong{
+.pagination-links strong {
 	padding: 8px 13px;
 	margin:5px;
 	background: #f4f4f4;
 	border: 1px #ccc solid;
 }
 
-a.pagination-link{
+a.pagination-link {
 	padding: 8px 13px;
 	margin:5px;
 	background: #f4f4f4;
 	border: 1px #ccc solid;
 }
 
-.cat-delete{
+.cat-delete {
 	display:inline;
 }
 
@@ -58,6 +103,10 @@ ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.btn-read {
+    padding-bottom: 10px;
 }
 
 .social-inner {
@@ -94,4 +143,18 @@ ul, ol {
  }
 
 
- /*hoem */
+ /* footer link */
+ .flex-link {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #0c163d;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: .5;
+    padding: 10px;
+ }
+ 
+ .flex-link a {
+     color: white;
+ }

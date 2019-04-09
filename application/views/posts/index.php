@@ -1,17 +1,34 @@
-<h2><?= $title ?></h2>
+
+<div class="title">
+		 <h1><?= $title ?></h1> 
+</div>
 
 
 	<div class="row">
 		<div class="col-sm-8">
-	    <?php foreach($posts as $post) : ?>
-	        <h3><?php echo $post['title']; ?></h3>
-			<img class="post-thumb" src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>">
-			<div class="border">
-			<small class="post-date">Posted on: <?php echo $post['created_at']; ?> in <strong><?php echo $post['name']; ?></strong></small><br>
-			<?php echo word_limiter($post['body'], 60); ?>
-			<br><br>
-			<p><a class="btn btn-default" href="<?php echo site_url('/posts/'.$post['slug']); ?>">Read More</a></p>
+			<?php foreach($posts as $post) : ?>
+				<div class="post">
+					<!-- title should have proper description -->
+				<div class="post-title"><?php echo $post['title']; ?></div>
+				<img class="post-thumb" src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>">
+				<div class="border">
+				<small class="post-date">
+					Posted on: <?php echo $post['created_at']; ?> in 
+					<strong><?php echo $post['name']; ?></strong>
+				</small>
+				<br>
+				<div class="post-body">
+					<?php echo word_limiter($post['body'], 60); ?>
+				</div>
+				<br>
+					<div class="btn-read">
+						<a class="btn btn-primary" href="<?php echo site_url('/posts/'.$post['slug']); ?>">
+						Read More
+						</a>
+					</div>
+				</div>	
 			</div>
+	    
 		<?php endforeach; ?>
 		</div>
 

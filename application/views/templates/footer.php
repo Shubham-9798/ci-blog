@@ -30,27 +30,24 @@
             <div class="col-sm-4 col-xl-3">
               <h5>Links</h5>
               <ul class="nav-list">
-                <li><a href="#">About</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="/posts">Blog</a></li>
                 <li><a href="#">Contacts</a></li>
-                <li><a href="#">Pricing</a></li>
               </ul>
             </div>
           </div>
        
 
        </div>  
-        
- 
-        
+    <div class="flex-link">
+          <a  href="#"><span>Facebook</span></a>
+          <a  href="#"><span>instagram</span></a>
+          <a  href="#"><span>twitter</span></a>
+          <a  href="#"><span>google</span></a>
+    </div>     
     </footer>
-    <div class="">
-          <a  href="#"><span class="mr-4"></span><span>Facebook</span></a>
-          <a  href="#"><span class="mr-4"></span><span>instagram</span></a>
-          <a  href="#"><span class="mr-4"></span><span>twitter</span></a>
-          <a  href="#"><span class="mr-4"></span><span>google</span></a>
-    </div> 
+
 
 
 
